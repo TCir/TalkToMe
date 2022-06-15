@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		444BE93F285977150064212A /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444BE93E285977150064212A /* TabBarVC.swift */; };
+		444BE94128597B710064212A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 444BE94028597B710064212A /* GoogleService-Info.plist */; };
+		44AE4945285970C4007AF572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE4944285970C4007AF572 /* AppDelegate.swift */; };
+		44AE4947285970C4007AF572 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE4946285970C4007AF572 /* SceneDelegate.swift */; };
+		44AE494E285970C5007AF572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44AE494D285970C5007AF572 /* Assets.xcassets */; };
+		44AE4951285970C5007AF572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44AE494F285970C5007AF572 /* LaunchScreen.storyboard */; };
+		44AE4964285970FE007AF572 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE4959285970FE007AF572 /* Alert.swift */; };
+		44AE4965285970FE007AF572 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE495C285970FE007AF572 /* LoginVC.swift */; };
+		44AE4966285970FE007AF572 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE495E285970FE007AF572 /* LoginScreen.swift */; };
+		44AE4967285970FE007AF572 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE4961285970FE007AF572 /* RegisterVC.swift */; };
+		44AE4968285970FE007AF572 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AE4963285970FE007AF572 /* RegisterScreen.swift */; };
+		9819620627BA899EB93301E3 /* Pods_TalkToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33895984137BB142345B4B9A /* Pods_TalkToMe.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		33895984137BB142345B4B9A /* Pods_TalkToMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalkToMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A0F1E6BCF6712E767B5BD32 /* Pods-TalkToMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMe.release.xcconfig"; path = "Target Support Files/Pods-TalkToMe/Pods-TalkToMe.release.xcconfig"; sourceTree = "<group>"; };
+		444BE93E285977150064212A /* TabBarVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		444BE94028597B710064212A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		44AE4941285970C4007AF572 /* TalkToMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalkToMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44AE4944285970C4007AF572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		44AE4946285970C4007AF572 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		44AE494D285970C5007AF572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44AE4950285970C5007AF572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44AE4952285970C5007AF572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44AE4959285970FE007AF572 /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		44AE495C285970FE007AF572 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		44AE495E285970FE007AF572 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		44AE4961285970FE007AF572 /* RegisterVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
+		44AE4963285970FE007AF572 /* RegisterScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		6D38C3A563B437749A737C0D /* Pods-TalkToMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalkToMe.debug.xcconfig"; path = "Target Support Files/Pods-TalkToMe/Pods-TalkToMe.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44AE493E285970C4007AF572 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9819620627BA899EB93301E3 /* Pods_TalkToMe.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00171E716508DA96834E3377 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D38C3A563B437749A737C0D /* Pods-TalkToMe.debug.xcconfig */,
+				3A0F1E6BCF6712E767B5BD32 /* Pods-TalkToMe.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		444BE93D285977150064212A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				444BE93E285977150064212A /* TabBarVC.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		44AE4938285970C4007AF572 = {
+			isa = PBXGroup;
+			children = (
+				44AE4943285970C4007AF572 /* TalkToMe */,
+				44AE4942285970C4007AF572 /* Products */,
+				00171E716508DA96834E3377 /* Pods */,
+				7B64C1134550F80C82125E77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		44AE4942285970C4007AF572 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44AE4941285970C4007AF572 /* TalkToMe.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44AE4943285970C4007AF572 /* TalkToMe */ = {
+			isa = PBXGroup;
+			children = (
+				444BE93D285977150064212A /* TabBar */,
+				44AE4958285970FE007AF572 /* Alert */,
+				44AE495A285970FE007AF572 /* Login */,
+				44AE495F285970FE007AF572 /* Register */,
+				44AE4944285970C4007AF572 /* AppDelegate.swift */,
+				44AE4946285970C4007AF572 /* SceneDelegate.swift */,
+				44AE494D285970C5007AF572 /* Assets.xcassets */,
+				44AE494F285970C5007AF572 /* LaunchScreen.storyboard */,
+				44AE4952285970C5007AF572 /* Info.plist */,
+				444BE94028597B710064212A /* GoogleService-Info.plist */,
+			);
+			path = TalkToMe;
+			sourceTree = "<group>";
+		};
+		44AE4958285970FE007AF572 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				44AE4959285970FE007AF572 /* Alert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		44AE495A285970FE007AF572 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				44AE495B285970FE007AF572 /* VC */,
+				44AE495D285970FE007AF572 /* Screen */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		44AE495B285970FE007AF572 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				44AE495C285970FE007AF572 /* LoginVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		44AE495D285970FE007AF572 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				44AE495E285970FE007AF572 /* LoginScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		44AE495F285970FE007AF572 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				44AE4960285970FE007AF572 /* VC */,
+				44AE4962285970FE007AF572 /* Screen */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		44AE4960285970FE007AF572 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				44AE4961285970FE007AF572 /* RegisterVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		44AE4962285970FE007AF572 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				44AE4963285970FE007AF572 /* RegisterScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		7B64C1134550F80C82125E77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33895984137BB142345B4B9A /* Pods_TalkToMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44AE4940285970C4007AF572 /* TalkToMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44AE4955285970C5007AF572 /* Build configuration list for PBXNativeTarget "TalkToMe" */;
+			buildPhases = (
+				6DFF846BA0FF41E8611F4E73 /* [CP] Check Pods Manifest.lock */,
+				44AE493D285970C4007AF572 /* Sources */,
+				44AE493E285970C4007AF572 /* Frameworks */,
+				44AE493F285970C4007AF572 /* Resources */,
+				C77FD474261B268E8BE0D841 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalkToMe;
+			productName = TalkToMe;
+			productReference = 44AE4941285970C4007AF572 /* TalkToMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44AE4939285970C4007AF572 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					44AE4940285970C4007AF572 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 44AE493C285970C4007AF572 /* Build configuration list for PBXProject "TalkToMe" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44AE4938285970C4007AF572;
+			productRefGroup = 44AE4942285970C4007AF572 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44AE4940285970C4007AF572 /* TalkToMe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44AE493F285970C4007AF572 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44AE4951285970C5007AF572 /* LaunchScreen.storyboard in Resources */,
+				44AE494E285970C5007AF572 /* Assets.xcassets in Resources */,
+				444BE94128597B710064212A /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DFF846BA0FF41E8611F4E73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalkToMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C77FD474261B268E8BE0D841 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkToMe/Pods-TalkToMe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalkToMe/Pods-TalkToMe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TalkToMe/Pods-TalkToMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44AE493D285970C4007AF572 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44AE4964285970FE007AF572 /* Alert.swift in Sources */,
+				44AE4945285970C4007AF572 /* AppDelegate.swift in Sources */,
+				44AE4965285970FE007AF572 /* LoginVC.swift in Sources */,
+				44AE4968285970FE007AF572 /* RegisterScreen.swift in Sources */,
+				44AE4967285970FE007AF572 /* RegisterVC.swift in Sources */,
+				44AE4947285970C4007AF572 /* SceneDelegate.swift in Sources */,
+				444BE93F285977150064212A /* TabBarVC.swift in Sources */,
+				44AE4966285970FE007AF572 /* LoginScreen.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		44AE494F285970C5007AF572 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44AE4950285970C5007AF572 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44AE4953285970C5007AF572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44AE4954285970C5007AF572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44AE4956285970C5007AF572 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D38C3A563B437749A737C0D /* Pods-TalkToMe.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RT4528VRD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TalkToMe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = devValentin.TalkToMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44AE4957285970C5007AF572 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A0F1E6BCF6712E767B5BD32 /* Pods-TalkToMe.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RT4528VRD6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TalkToMe/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = devValentin.TalkToMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44AE493C285970C4007AF572 /* Build configuration list for PBXProject "TalkToMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44AE4953285970C5007AF572 /* Debug */,
+				44AE4954285970C5007AF572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44AE4955285970C5007AF572 /* Build configuration list for PBXNativeTarget "TalkToMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44AE4956285970C5007AF572 /* Debug */,
+				44AE4957285970C5007AF572 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44AE4939285970C4007AF572 /* Project object */;
+}
