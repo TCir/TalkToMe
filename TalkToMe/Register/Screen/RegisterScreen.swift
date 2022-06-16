@@ -52,6 +52,20 @@ class RegisterScreen: UIView {
         return image
     }()
     
+    lazy var nameUser:UITextField = {
+        let textfield = UITextField()
+        textfield.translatesAutoresizingMaskIntoConstraints = false
+        textfield.autocorrectionType = .no
+        textfield.backgroundColor = .white
+        textfield.borderStyle = .roundedRect
+        textfield.keyboardType = .emailAddress
+        textfield.placeholder = "Digite seu nome:"
+        textfield.font = UIFont.systemFont(ofSize: 18)
+        textfield.textColor = .darkGray
+        return textfield
+    }()
+    
+    
     // criando textField e-mail de cadastro
     lazy var emailTextField:UITextField = {
         let textfield = UITextField()
@@ -128,6 +142,7 @@ class RegisterScreen: UIView {
     private func configSuperView(){
         self.addSubview(self.backButton)
         self.addSubview(self.imageAddUser)
+        self.addSubview(self.nameUser)
         self.addSubview(self.emailTextField)
         self.addSubview(self.passwordTextField)
         self.addSubview(self.confirmPasswordTextField)
@@ -146,6 +161,7 @@ class RegisterScreen: UIView {
         self.emailTextField.delegate = delegate
         self.passwordTextField.delegate = delegate
         self.confirmPasswordTextField.delegate = delegate
+        self.nameUser.delegate = delegate
     }
     
     //metodo para dar funcionalidade para backButton
@@ -161,10 +177,10 @@ class RegisterScreen: UIView {
     //    MARK: VALIDAÇÃO DOS TEXTFIELD --------------------------------------------------------------------------
     //    //Será chamada dentro do protocolo dos TexTField / para validação de campo
     public func validationTextField(){
-
+        
         // logica de validação
         // quando disparar vai verificar se email, password e confirmPass esta vazio ou não.
-        if self.emailTextField.text != "" && self.confirmPasswordTextField.text != "" && self.passwordTextField.text != ""
+        if self.emailTextField.text != "" && self.confirmPasswordTextField.text != "" && self.passwordTextField.text != "" && self.nameUser.text != ""
         {
             if self.passwordTextField.text == self.confirmPasswordTextField.text
             {
@@ -192,6 +208,9 @@ class RegisterScreen: UIView {
     
     
     //  MARK: Métodos para simplificar a validação passado em RegisterVC
+    public func getUserName()->String{
+        return self.nameUser.text ?? ""
+    }
     public func getEmail()->String{
         return self.emailTextField.text ?? ""
     }
@@ -201,8 +220,6 @@ class RegisterScreen: UIView {
     public func getConfirmPass()->String{
         return self.confirmPasswordTextField.text ?? ""
     }
-    
-    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -232,9 +249,20 @@ class RegisterScreen: UIView {
             self.backButton.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
             
             
+            //userNameTextField
+            // Top pegando referencia da image
+            self.nameUser.topAnchor.constraint(equalTo: self.imageAddUser.bottomAnchor,constant: 10),
+            //Pegando referencia da esquerda sendo o proprio leading
+            self.nameUser.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            //pegando referencia da direita sendo proprio trailing
+            self.nameUser.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
+            //definindo o height ou seja a altura do textField
+            self.nameUser.heightAnchor.constraint(equalToConstant: 45),
+            
+            
             //emailTextFiel
             // Top pegando referencia da image
-            self.emailTextField.topAnchor.constraint(equalTo: self.imageAddUser.bottomAnchor,constant: 10),
+            self.emailTextField.topAnchor.constraint(equalTo: self.nameUser.bottomAnchor,constant: 10),
             //Pegando referencia da esquerda sendo o proprio leading
             self.emailTextField.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             //pegando referencia da direita sendo proprio trailing
@@ -266,7 +294,7 @@ class RegisterScreen: UIView {
             
             //registerButton
             // Top pegando referencia da confirmPasswordTextField
-            self.registerButton.topAnchor.constraint(equalTo: self.confirmPasswordTextField.bottomAnchor,constant: 10),
+            self.registerButton.topAnchor.constraint(equalTo: self.confirmPasswordTextField.bottomAnchor,constant: 40),
             //Pegando referencia da esquerda sendo o proprio leading
             self.registerButton.leadingAnchor.constraint(equalTo: self.emailTextField.leadingAnchor),
             //pegando referencia da direita sendo proprio trailing
